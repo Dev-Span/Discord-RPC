@@ -5,13 +5,13 @@ client.on('ready', () => {
 client.request('SET_ACTIVITY', {
 pid: process.pid,
 activity : {
-details : "Add Luna!!!",
+details : "", //Type your Details in "HERE"
 assets : {
-large_image : "Image",
+large_image : "Image", // Type your Image Name from https://discord.com/developers/applications/YOUR BOT ID/rich-presence/assets
 large_text : "Your Status" // THIS WILL SHOW AS "Playing <Status>" from the outisde
 },
-buttons : [{label : "Luna Add Link" , url : "https://discord.com/oauth2/authorize?client_id=723927058870304869&permissions=8&scope=bot+&response_type=code&redirect_uri=https%3A%2F%2Fdiscord.com%2Finvite%2FexkAV5B9ez"},{label : "Nice Video",url : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}]
-}
+buttons : [{label : "" , url : ""},{label : "",url : ""}]
+}         //Type in Label your Text and in Url a Link
 })
-})
-client.login({ clientId : "723927058870304869" }).catch(console.error);
+})                       //Type in "HERE" your Bot client ID
+client.login({ clientId : "" }).catch(console.error);
